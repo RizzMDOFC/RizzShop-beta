@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin WiFi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Admin WiFi</h2>
+        <button onclick="logout()">Logout</button>
+
+        <h3>📋 Daftar Perangkat Terhubung</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>IP</th>
+                    <th>MAC Address</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="deviceTable">
+                <tr><td colspan="4">Belum ada perangkat</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
